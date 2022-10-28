@@ -1,0 +1,1420 @@
+@import "_color.scss";
+
+$grid: (
+  _clear: 0px -10px 10px -10px,
+  _padding: 10px !important,
+);
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Arial", "Microsoft JhengHei";
+
+  @mixin bootstrap-default-set-12 {
+    width: calc(100% / 12 * 12);
+  }
+  @mixin bootstrap-default-set-11 {
+    width: calc(100% / 12 * 11);
+  }
+  @mixin bootstrap-default-set-10 {
+    width: calc(100% / 12 * 10);
+  }
+  @mixin bootstrap-default-set-9 {
+    width: calc(100% / 12 * 9);
+  }
+  @mixin bootstrap-default-set-8 {
+    width: calc(100% / 12 * 8);
+  }
+  @mixin bootstrap-default-set-7 {
+    width: calc(100% / 12 * 7);
+  }
+  @mixin bootstrap-default-set-6 {
+    width: calc(100% / 12 * 6);
+  }
+  @mixin bootstrap-default-set-5 {
+    width: calc(100% / 12 * 5);
+  }
+  @mixin bootstrap-default-set-4 {
+    width: calc(100% / 12 * 4);
+  }
+  @mixin bootstrap-default-set-3 {
+    width: calc(100% / 12 * 3);
+  }
+  @mixin bootstrap-default-set-2 {
+    width: calc(100% / 12 * 2);
+  }
+  @mixin bootstrap-default-set-1 {
+    width: calc(100% / 12 * 1);
+  }
+  @mixin bootstrap-default-set-20percent {
+    width: calc(100% / 5 * 1);
+  }
+
+  @mixin bootstrap-pull-set-12 {
+    right: calc(100% / 12 * 12);
+  }
+  @mixin bootstrap-pull-set-11 {
+    right: calc(100% / 12 * 11);
+  }
+  @mixin bootstrap-pull-set-10 {
+    right: calc(100% / 12 * 10);
+  }
+  @mixin bootstrap-pull-set-9 {
+    right: calc(100% / 12 * 9);
+  }
+  @mixin bootstrap-pull-set-8 {
+    right: calc(100% / 12 * 8);
+  }
+  @mixin bootstrap-pull-set-7 {
+    right: calc(100% / 12 * 7);
+  }
+  @mixin bootstrap-pull-set-6 {
+    right: calc(100% / 12 * 6);
+  }
+  @mixin bootstrap-pull-set-5 {
+    right: calc(100% / 12 * 5);
+  }
+  @mixin bootstrap-pull-set-4 {
+    right: calc(100% / 12 * 4);
+  }
+  @mixin bootstrap-pull-set-3 {
+    right: calc(100% / 12 * 3);
+  }
+  @mixin bootstrap-pull-set-2 {
+    right: calc(100% / 12 * 2);
+  }
+  @mixin bootstrap-pull-set-1 {
+    right: calc(100% / 12 * 1);
+  }
+  @mixin bootstrap-pull-set-0 {
+    right: auto;
+  }
+  @mixin bootstrap-pull-set-20percent-1 {
+    right: calc(100% / 5 * 1);
+  }
+  @mixin bootstrap-pull-set-20percent-2 {
+    right: calc(100% / 5 * 2);
+  }
+  @mixin bootstrap-pull-set-20percent-3 {
+    right: calc(100% / 5 * 3);
+  }
+  @mixin bootstrap-pull-set-20percent-4 {
+    right: calc(100% / 5 * 4);
+  }
+
+  @mixin bootstrap-push-set-12 {
+    left: calc(100% / 12 * 12);
+  }
+  @mixin bootstrap-push-set-11 {
+    left: calc(100% / 12 * 11);
+  }
+  @mixin bootstrap-push-set-10 {
+    left: calc(100% / 12 * 10);
+  }
+  @mixin bootstrap-push-set-9 {
+    left: calc(100% / 12 * 9);
+  }
+  @mixin bootstrap-push-set-8 {
+    left: calc(100% / 12 * 8);
+  }
+  @mixin bootstrap-push-set-7 {
+    left: calc(100% / 12 * 7);
+  }
+  @mixin bootstrap-push-set-6 {
+    left: calc(100% / 12 * 6);
+  }
+  @mixin bootstrap-push-set-5 {
+    left: calc(100% / 12 * 5);
+  }
+  @mixin bootstrap-push-set-4 {
+    left: calc(100% / 12 * 4);
+  }
+  @mixin bootstrap-push-set-3 {
+    left: calc(100% / 12 * 3);
+  }
+  @mixin bootstrap-push-set-2 {
+    left: calc(100% / 12 * 2);
+  }
+  @mixin bootstrap-push-set-1 {
+    left: calc(100% / 12 * 1);
+  }
+  @mixin bootstrap-push-set-0 {
+    left: auto;
+  }
+  @mixin bootstrap-push-set-20percent-1 {
+    left: calc(100% / 5 * 1);
+  }
+  @mixin bootstrap-push-set-20percent-2 {
+    left: calc(100% / 5 * 2);
+  }
+  @mixin bootstrap-push-set-20percent-3 {
+    left: calc(100% / 5 * 3);
+  }
+  @mixin bootstrap-push-set-20percent-4 {
+    left: calc(100% / 5 * 4);
+  }
+
+  @mixin bootstrap-offset-set-12 {
+    margin-left: calc(100% / 12 * 12);
+  }
+  @mixin bootstrap-offset-set-11 {
+    margin-left: calc(100% / 12 * 11);
+  }
+  @mixin bootstrap-offset-set-10 {
+    margin-left: calc(100% / 12 * 10);
+  }
+  @mixin bootstrap-offset-set-9 {
+    margin-left: calc(100% / 12 * 9);
+  }
+  @mixin bootstrap-offset-set-8 {
+    margin-left: calc(100% / 12 * 8);
+  }
+  @mixin bootstrap-offset-set-7 {
+    margin-left: calc(100% / 12 * 7);
+  }
+  @mixin bootstrap-offset-set-6 {
+    margin-left: calc(100% / 12 * 6);
+  }
+  @mixin bootstrap-offset-set-5 {
+    margin-left: calc(100% / 12 * 5);
+  }
+  @mixin bootstrap-offset-set-4 {
+    margin-left: calc(100% / 12 * 4);
+  }
+  @mixin bootstrap-offset-set-3 {
+    margin-left: calc(100% / 12 * 3);
+  }
+  @mixin bootstrap-offset-set-2 {
+    margin-left: calc(100% / 12 * 2);
+  }
+  @mixin bootstrap-offset-set-1 {
+    margin-left: calc(100% / 12 * 1);
+  }
+  @mixin bootstrap-offset-set-0 {
+    margin-left: calc(100% / 12 * 0);
+  }
+  @mixin bootstrap-offset-set-20percent-1 {
+    margin-left: calc(100% / 5 * 1);
+  }
+  @mixin bootstrap-offset-set-20percent-2 {
+    margin-left: calc(100% / 5 * 2);
+  }
+  @mixin bootstrap-offset-set-20percent-3 {
+    margin-left: calc(100% / 5 * 3);
+  }
+  @mixin bootstrap-offset-set-20percent-4 {
+    margin-left: calc(100% / 5 * 4);
+  }
+
+  .col-xs-1,
+  .col-sm-1,
+  .col-md-1,
+  .col-lg-1,
+  .col-xs-2,
+  .col-sm-2,
+  .col-md-2,
+  .col-lg-2,
+  .col-xs-3,
+  .col-sm-3,
+  .col-md-3,
+  .col-lg-3,
+  .col-xs-4,
+  .col-sm-4,
+  .col-md-4,
+  .col-lg-4,
+  .col-xs-5,
+  .col-sm-5,
+  .col-md-5,
+  .col-lg-5,
+  .col-xs-6,
+  .col-sm-6,
+  .col-md-6,
+  .col-lg-6,
+  .col-xs-7,
+  .col-sm-7,
+  .col-md-7,
+  .col-lg-7,
+  .col-xs-8,
+  .col-sm-8,
+  .col-md-8,
+  .col-lg-8,
+  .col-xs-9,
+  .col-sm-9,
+  .col-md-9,
+  .col-lg-9,
+  .col-xs-10,
+  .col-sm-10,
+  .col-md-10,
+  .col-lg-10,
+  .col-xs-11,
+  .col-sm-11,
+  .col-md-11,
+  .col-lg-11,
+  .col-xs-12,
+  .col-sm-12,
+  .col-md-12,
+  .col-lg-12,
+  .col-xs-20percent,
+  .col-sm-20percent,
+  .col-md-20percent,
+  .col-lg-20percent {
+    position: relative;
+    min-height: 1px;
+    padding-left: map-get($grid, _padding);
+    padding-right: map-get($grid, _padding);
+  }
+
+  .col-xs-1,
+  .col-xs-2,
+  .col-xs-3,
+  .col-xs-4,
+  .col-xs-5,
+  .col-xs-6,
+  .col-xs-7,
+  .col-xs-8,
+  .col-xs-9,
+  .col-xs-10,
+  .col-xs-11,
+  .col-xs-12,
+  .col-xs-20percent {
+    float: left;
+  }
+  .col-xs-12 {
+    @include bootstrap-default-set-12;
+  }
+  .col-xs-11 {
+    @include bootstrap-default-set-11;
+  }
+  .col-xs-10 {
+    @include bootstrap-default-set-10;
+  }
+  .col-xs-9 {
+    @include bootstrap-default-set-9;
+  }
+  .col-xs-8 {
+    @include bootstrap-default-set-8;
+  }
+  .col-xs-7 {
+    @include bootstrap-default-set-7;
+  }
+  .col-xs-6 {
+    @include bootstrap-default-set-6;
+  }
+  .col-xs-5 {
+    @include bootstrap-default-set-5;
+  }
+  .col-xs-4 {
+    @include bootstrap-default-set-4;
+  }
+  .col-xs-3 {
+    @include bootstrap-default-set-3;
+  }
+  .col-xs-2 {
+    @include bootstrap-default-set-2;
+  }
+  .col-xs-1 {
+    @include bootstrap-default-set-1;
+  }
+  .col-xs-20percent {
+    @include bootstrap-default-set-20percent;
+  }
+
+  .col-xs-pull-12 {
+    @include bootstrap-pull-set-12;
+  }
+  .col-xs-pull-11 {
+    @include bootstrap-pull-set-11;
+  }
+  .col-xs-pull-10 {
+    @include bootstrap-pull-set-10;
+  }
+  .col-xs-pull-9 {
+    @include bootstrap-pull-set-9;
+  }
+  .col-xs-pull-8 {
+    @include bootstrap-pull-set-8;
+  }
+  .col-xs-pull-7 {
+    @include bootstrap-pull-set-7;
+  }
+  .col-xs-pull-6 {
+    @include bootstrap-pull-set-6;
+  }
+  .col-xs-pull-5 {
+    @include bootstrap-pull-set-5;
+  }
+  .col-xs-pull-4 {
+    @include bootstrap-pull-set-4;
+  }
+  .col-xs-pull-3 {
+    @include bootstrap-pull-set-3;
+  }
+  .col-xs-pull-2 {
+    @include bootstrap-pull-set-2;
+  }
+  .col-xs-pull-1 {
+    @include bootstrap-pull-set-1;
+  }
+  .col-xs-pull-0 {
+    @include bootstrap-pull-set-0;
+  }
+  .col-xs-pull-20percent-1 {
+    @include bootstrap-pull-set-20percent-1;
+  }
+  .col-xs-pull-20percent-2 {
+    @include bootstrap-pull-set-20percent-2;
+  }
+  .col-xs-pull-20percent-3 {
+    @include bootstrap-pull-set-20percent-3;
+  }
+  .col-xs-pull-20percent-4 {
+    @include bootstrap-pull-set-20percent-4;
+  }
+
+  .col-xs-push-12 {
+    @include bootstrap-push-set-12;
+  }
+  .col-xs-push-11 {
+    @include bootstrap-push-set-11;
+  }
+  .col-xs-push-10 {
+    @include bootstrap-push-set-10;
+  }
+  .col-xs-push-9 {
+    @include bootstrap-push-set-9;
+  }
+  .col-xs-push-8 {
+    @include bootstrap-push-set-8;
+  }
+  .col-xs-push-7 {
+    @include bootstrap-push-set-7;
+  }
+  .col-xs-push-6 {
+    @include bootstrap-push-set-6;
+  }
+  .col-xs-push-5 {
+    @include bootstrap-push-set-5;
+  }
+  .col-xs-push-4 {
+    @include bootstrap-push-set-4;
+  }
+  .col-xs-push-3 {
+    @include bootstrap-push-set-3;
+  }
+  .col-xs-push-2 {
+    @include bootstrap-push-set-2;
+  }
+  .col-xs-push-1 {
+    @include bootstrap-push-set-1;
+  }
+  .col-xs-push-0 {
+    @include bootstrap-push-set-0;
+  }
+  .col-xs-push-20percent-1 {
+    @include bootstrap-push-set-20percent-1;
+  }
+  .col-xs-push-20percent-2 {
+    @include bootstrap-push-set-20percent-2;
+  }
+  .col-xs-push-20percent-3 {
+    @include bootstrap-push-set-20percent-3;
+  }
+  .col-xs-push-20percent-4 {
+    @include bootstrap-push-set-20percent-4;
+  }
+
+  .col-xs-offset-12 {
+    @include bootstrap-offset-set-12;
+  }
+  .col-xs-offset-11 {
+    @include bootstrap-offset-set-11;
+  }
+  .col-xs-offset-10 {
+    @include bootstrap-offset-set-10;
+  }
+  .col-xs-offset-9 {
+    @include bootstrap-offset-set-9;
+  }
+  .col-xs-offset-8 {
+    @include bootstrap-offset-set-8;
+  }
+  .col-xs-offset-7 {
+    @include bootstrap-offset-set-7;
+  }
+  .col-xs-offset-6 {
+    @include bootstrap-offset-set-6;
+  }
+  .col-xs-offset-5 {
+    @include bootstrap-offset-set-5;
+  }
+  .col-xs-offset-4 {
+    @include bootstrap-offset-set-4;
+  }
+  .col-xs-offset-3 {
+    @include bootstrap-offset-set-3;
+  }
+  .col-xs-offset-2 {
+    @include bootstrap-offset-set-2;
+  }
+  .col-xs-offset-1 {
+    @include bootstrap-offset-set-1;
+  }
+  .col-xs-offset-0 {
+    @include bootstrap-offset-set-0;
+  }
+  .col-xs-offset-20percent-1 {
+    @include bootstrap-offset-set-20percent-1;
+  }
+  .col-xs-offset-20percent-2 {
+    @include bootstrap-offset-set-20percent-2;
+  }
+  .col-xs-offset-20percent-3 {
+    @include bootstrap-offset-set-20percent-3;
+  }
+  .col-xs-offset-20percent-4 {
+    @include bootstrap-offset-set-20percent-4;
+  }
+
+  .padding-0-xs {
+    padding: 0 !important;
+  }
+  .padding-left-0-xs {
+    padding-left: 0px !important;
+    padding-right: map-get($grid, _padding);
+  }
+  .padding-right-0-xs {
+    padding-left: map-get($grid, _padding);
+    padding-right: 0px !important;
+  }
+  .margin-0-xs {
+    margin: 0;
+  }
+  .absolute-center-xs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .text-left-xs {
+    text-align: left;
+  }
+  .text-center-xs {
+    text-align: center;
+  }
+  .text-right-xs {
+    text-align: right;
+  }
+  .text-justify-xs {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: justify;
+    &::after {
+      content: ".";
+      display: inline-block;
+      position: absolute;
+      width: 100%;
+      visibility: hidden;
+      height: 0;
+      overflow: hidden;
+    }
+  }
+  .float-left-xs {
+    float: left;
+  }
+  .float-right-xs {
+    float: right;
+  }
+
+  @media (min-width: 768px) {
+    .col-sm-1,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9,
+    .col-sm-10,
+    .col-sm-11,
+    .col-sm-12,
+    .col-sm-20percent {
+      float: left;
+    }
+    .col-sm-12 {
+      @include bootstrap-default-set-12;
+    }
+    .col-sm-11 {
+      @include bootstrap-default-set-11;
+    }
+    .col-sm-10 {
+      @include bootstrap-default-set-10;
+    }
+    .col-sm-9 {
+      @include bootstrap-default-set-9;
+    }
+    .col-sm-8 {
+      @include bootstrap-default-set-8;
+    }
+    .col-sm-7 {
+      @include bootstrap-default-set-7;
+    }
+    .col-sm-6 {
+      @include bootstrap-default-set-6;
+    }
+    .col-sm-5 {
+      @include bootstrap-default-set-5;
+    }
+    .col-sm-4 {
+      @include bootstrap-default-set-4;
+    }
+    .col-sm-3 {
+      @include bootstrap-default-set-3;
+    }
+    .col-sm-2 {
+      @include bootstrap-default-set-2;
+    }
+    .col-sm-1 {
+      @include bootstrap-default-set-1;
+    }
+    .col-sm-20percent {
+      @include bootstrap-default-set-20percent;
+    }
+
+    .col-sm-pull-12 {
+      @include bootstrap-pull-set-12;
+    }
+    .col-sm-pull-11 {
+      @include bootstrap-pull-set-11;
+    }
+    .col-sm-pull-10 {
+      @include bootstrap-pull-set-10;
+    }
+    .col-sm-pull-9 {
+      @include bootstrap-pull-set-9;
+    }
+    .col-sm-pull-8 {
+      @include bootstrap-pull-set-8;
+    }
+    .col-sm-pull-7 {
+      @include bootstrap-pull-set-7;
+    }
+    .col-sm-pull-6 {
+      @include bootstrap-pull-set-6;
+    }
+    .col-sm-pull-5 {
+      @include bootstrap-pull-set-5;
+    }
+    .col-sm-pull-4 {
+      @include bootstrap-pull-set-4;
+    }
+    .col-sm-pull-3 {
+      @include bootstrap-pull-set-3;
+    }
+    .col-sm-pull-2 {
+      @include bootstrap-pull-set-2;
+    }
+    .col-sm-pull-1 {
+      @include bootstrap-pull-set-1;
+    }
+    .col-sm-pull-0 {
+      @include bootstrap-pull-set-0;
+    }
+    .col-sm-pull-20percent-1 {
+      @include bootstrap-pull-set-20percent-1;
+    }
+    .col-sm-pull-20percent-2 {
+      @include bootstrap-pull-set-20percent-2;
+    }
+    .col-sm-pull-20percent-3 {
+      @include bootstrap-pull-set-20percent-3;
+    }
+    .col-sm-pull-20percent-4 {
+      @include bootstrap-pull-set-20percent-4;
+    }
+
+    .col-sm-push-12 {
+      @include bootstrap-push-set-12;
+    }
+    .col-sm-push-11 {
+      @include bootstrap-push-set-11;
+    }
+    .col-sm-push-10 {
+      @include bootstrap-push-set-10;
+    }
+    .col-sm-push-9 {
+      @include bootstrap-push-set-9;
+    }
+    .col-sm-push-8 {
+      @include bootstrap-push-set-8;
+    }
+    .col-sm-push-7 {
+      @include bootstrap-push-set-7;
+    }
+    .col-sm-push-6 {
+      @include bootstrap-push-set-6;
+    }
+    .col-sm-push-5 {
+      @include bootstrap-push-set-5;
+    }
+    .col-sm-push-4 {
+      @include bootstrap-push-set-4;
+    }
+    .col-sm-push-3 {
+      @include bootstrap-push-set-3;
+    }
+    .col-sm-push-2 {
+      @include bootstrap-push-set-2;
+    }
+    .col-sm-push-1 {
+      @include bootstrap-push-set-1;
+    }
+    .col-sm-push-0 {
+      @include bootstrap-push-set-0;
+    }
+    .col-sm-push-20percent-1 {
+      @include bootstrap-push-set-20percent-1;
+    }
+    .col-sm-push-20percent-2 {
+      @include bootstrap-push-set-20percent-2;
+    }
+    .col-sm-push-20percent-3 {
+      @include bootstrap-push-set-20percent-3;
+    }
+    .col-sm-push-20percent-4 {
+      @include bootstrap-push-set-20percent-4;
+    }
+
+    .col-sm-offset-12 {
+      @include bootstrap-offset-set-12;
+    }
+    .col-sm-offset-11 {
+      @include bootstrap-offset-set-11;
+    }
+    .col-sm-offset-10 {
+      @include bootstrap-offset-set-10;
+    }
+    .col-sm-offset-9 {
+      @include bootstrap-offset-set-9;
+    }
+    .col-sm-offset-8 {
+      @include bootstrap-offset-set-8;
+    }
+    .col-sm-offset-7 {
+      @include bootstrap-offset-set-7;
+    }
+    .col-sm-offset-6 {
+      @include bootstrap-offset-set-6;
+    }
+    .col-sm-offset-5 {
+      @include bootstrap-offset-set-5;
+    }
+    .col-sm-offset-4 {
+      @include bootstrap-offset-set-4;
+    }
+    .col-sm-offset-3 {
+      @include bootstrap-offset-set-3;
+    }
+    .col-sm-offset-2 {
+      @include bootstrap-offset-set-2;
+    }
+    .col-sm-offset-1 {
+      @include bootstrap-offset-set-1;
+    }
+    .col-sm-offset-0 {
+      @include bootstrap-offset-set-0;
+    }
+    .col-sm-offset-20percent-1 {
+      @include bootstrap-offset-set-20percent-1;
+    }
+    .col-sm-offset-20percent-2 {
+      @include bootstrap-offset-set-20percent-2;
+    }
+    .col-sm-offset-20percent-3 {
+      @include bootstrap-offset-set-20percent-3;
+    }
+    .col-sm-offset-20percent-4 {
+      @include bootstrap-offset-set-20percent-4;
+    }
+
+    .padding-0-sm {
+      padding: 0 !important;
+    }
+    .padding-left-0-sm {
+      padding-left: 0px !important;
+      padding-right: map-get($grid, _padding);
+    }
+    .padding-right-0-sm {
+      padding-left: map-get($grid, _padding);
+      padding-right: 0px !important;
+    }
+    .margin-0-sm {
+      margin: 0;
+    }
+    .absolute-center-sm {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+    .text-left-sm {
+      text-align: left;
+    }
+    .text-center-sm {
+      text-align: center;
+    }
+    .text-right-sm {
+      text-align: right;
+    }
+    .text-justify-sm {
+      text-align: justify;
+      text-justify: distribute-all-lines;
+      text-align-last: justify;
+      &::after {
+        content: ".";
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
+      }
+    }
+    .float-left-sm {
+      float: left;
+    }
+    .float-right-sm {
+      float: right;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .col-md-1,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12,
+    .col-md-20percent {
+      float: left;
+    }
+    .col-md-12 {
+      @include bootstrap-default-set-12;
+    }
+    .col-md-11 {
+      @include bootstrap-default-set-11;
+    }
+    .col-md-10 {
+      @include bootstrap-default-set-10;
+    }
+    .col-md-9 {
+      @include bootstrap-default-set-9;
+    }
+    .col-md-8 {
+      @include bootstrap-default-set-8;
+    }
+    .col-md-7 {
+      @include bootstrap-default-set-7;
+    }
+    .col-md-6 {
+      @include bootstrap-default-set-6;
+    }
+    .col-md-5 {
+      @include bootstrap-default-set-5;
+    }
+    .col-md-4 {
+      @include bootstrap-default-set-4;
+    }
+    .col-md-3 {
+      @include bootstrap-default-set-3;
+    }
+    .col-md-2 {
+      @include bootstrap-default-set-2;
+    }
+    .col-md-1 {
+      @include bootstrap-default-set-1;
+    }
+    .col-md-20percent {
+      @include bootstrap-default-set-20percent;
+    }
+
+    .col-md-pull-12 {
+      @include bootstrap-pull-set-12;
+    }
+    .col-md-pull-11 {
+      @include bootstrap-pull-set-11;
+    }
+    .col-md-pull-10 {
+      @include bootstrap-pull-set-10;
+    }
+    .col-md-pull-9 {
+      @include bootstrap-pull-set-9;
+    }
+    .col-md-pull-8 {
+      @include bootstrap-pull-set-8;
+    }
+    .col-md-pull-7 {
+      @include bootstrap-pull-set-7;
+    }
+    .col-md-pull-6 {
+      @include bootstrap-pull-set-6;
+    }
+    .col-md-pull-5 {
+      @include bootstrap-pull-set-5;
+    }
+    .col-md-pull-4 {
+      @include bootstrap-pull-set-4;
+    }
+    .col-md-pull-3 {
+      @include bootstrap-pull-set-3;
+    }
+    .col-md-pull-2 {
+      @include bootstrap-pull-set-2;
+    }
+    .col-md-pull-1 {
+      @include bootstrap-pull-set-1;
+    }
+    .col-md-pull-0 {
+      @include bootstrap-pull-set-0;
+    }
+    .col-md-pull-20percent-1 {
+      @include bootstrap-pull-set-20percent-1;
+    }
+    .col-md-pull-20percent-2 {
+      @include bootstrap-pull-set-20percent-2;
+    }
+    .col-md-pull-20percent-3 {
+      @include bootstrap-pull-set-20percent-3;
+    }
+    .col-md-pull-20percent-4 {
+      @include bootstrap-pull-set-20percent-4;
+    }
+
+    .col-md-push-12 {
+      @include bootstrap-push-set-12;
+    }
+    .col-md-push-11 {
+      @include bootstrap-push-set-11;
+    }
+    .col-md-push-10 {
+      @include bootstrap-push-set-10;
+    }
+    .col-md-push-9 {
+      @include bootstrap-push-set-9;
+    }
+    .col-md-push-8 {
+      @include bootstrap-push-set-8;
+    }
+    .col-md-push-7 {
+      @include bootstrap-push-set-7;
+    }
+    .col-md-push-6 {
+      @include bootstrap-push-set-6;
+    }
+    .col-md-push-5 {
+      @include bootstrap-push-set-5;
+    }
+    .col-md-push-4 {
+      @include bootstrap-push-set-4;
+    }
+    .col-md-push-3 {
+      @include bootstrap-push-set-3;
+    }
+    .col-md-push-2 {
+      @include bootstrap-push-set-2;
+    }
+    .col-md-push-1 {
+      @include bootstrap-push-set-1;
+    }
+    .col-md-push-0 {
+      @include bootstrap-push-set-0;
+    }
+    .col-md-push-20percent-1 {
+      @include bootstrap-push-set-20percent-1;
+    }
+    .col-md-push-20percent-2 {
+      @include bootstrap-push-set-20percent-2;
+    }
+    .col-md-push-20percent-3 {
+      @include bootstrap-push-set-20percent-3;
+    }
+    .col-md-push-20percent-4 {
+      @include bootstrap-push-set-20percent-4;
+    }
+
+    .col-md-offset-12 {
+      @include bootstrap-offset-set-12;
+    }
+    .col-md-offset-11 {
+      @include bootstrap-offset-set-11;
+    }
+    .col-md-offset-10 {
+      @include bootstrap-offset-set-10;
+    }
+    .col-md-offset-9 {
+      @include bootstrap-offset-set-9;
+    }
+    .col-md-offset-8 {
+      @include bootstrap-offset-set-8;
+    }
+    .col-md-offset-7 {
+      @include bootstrap-offset-set-7;
+    }
+    .col-md-offset-6 {
+      @include bootstrap-offset-set-6;
+    }
+    .col-md-offset-5 {
+      @include bootstrap-offset-set-5;
+    }
+    .col-md-offset-4 {
+      @include bootstrap-offset-set-4;
+    }
+    .col-md-offset-3 {
+      @include bootstrap-offset-set-3;
+    }
+    .col-md-offset-2 {
+      @include bootstrap-offset-set-2;
+    }
+    .col-md-offset-1 {
+      @include bootstrap-offset-set-1;
+    }
+    .col-md-offset-0 {
+      @include bootstrap-offset-set-0;
+    }
+    .col-md-offset-20percent-1 {
+      @include bootstrap-offset-set-20percent-1;
+    }
+    .col-md-offset-20percent-2 {
+      @include bootstrap-offset-set-20percent-2;
+    }
+    .col-md-offset-20percent-3 {
+      @include bootstrap-offset-set-20percent-3;
+    }
+    .col-md-offset-20percent-4 {
+      @include bootstrap-offset-set-20percent-4;
+    }
+
+    .padding-0-md {
+      padding: 0 !important;
+    }
+    .padding-left-0-md {
+      padding-left: 0px !important;
+      padding-right: map-get($grid, _padding);
+    }
+    .padding-right-0-md {
+      padding-left: map-get($grid, _padding);
+      padding-right: 0px !important;
+    }
+    .margin-0-md {
+      margin: 0;
+    }
+    .absolute-center-md {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .text-left-md {
+      text-align: left;
+    }
+    .text-center-md {
+      text-align: center;
+    }
+    .text-right-md {
+      text-align: right;
+    }
+    .text-justify-md {
+      text-align: justify;
+      text-justify: distribute-all-lines;
+      text-align-last: justify;
+      &::after {
+        content: ".";
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
+      }
+    }
+    .float-left-md {
+      float: left;
+    }
+    .float-right-md {
+      float: right;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .col-lg-1,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12,
+    .col-lg-20percent {
+      float: left;
+    }
+    .col-lg-12 {
+      @include bootstrap-default-set-12;
+    }
+    .col-lg-11 {
+      @include bootstrap-default-set-11;
+    }
+    .col-lg-10 {
+      @include bootstrap-default-set-10;
+    }
+    .col-lg-9 {
+      @include bootstrap-default-set-9;
+    }
+    .col-lg-8 {
+      @include bootstrap-default-set-8;
+    }
+    .col-lg-7 {
+      @include bootstrap-default-set-7;
+    }
+    .col-lg-6 {
+      @include bootstrap-default-set-6;
+    }
+    .col-lg-5 {
+      @include bootstrap-default-set-5;
+    }
+    .col-lg-4 {
+      @include bootstrap-default-set-4;
+    }
+    .col-lg-3 {
+      @include bootstrap-default-set-3;
+    }
+    .col-lg-2 {
+      @include bootstrap-default-set-2;
+    }
+    .col-lg-1 {
+      @include bootstrap-default-set-1;
+    }
+    .col-lg-20percent {
+      @include bootstrap-default-set-20percent;
+    }
+
+    .col-lg-pull-12 {
+      @include bootstrap-pull-set-12;
+    }
+    .col-lg-pull-11 {
+      @include bootstrap-pull-set-11;
+    }
+    .col-lg-pull-10 {
+      @include bootstrap-pull-set-10;
+    }
+    .col-lg-pull-9 {
+      @include bootstrap-pull-set-9;
+    }
+    .col-lg-pull-8 {
+      @include bootstrap-pull-set-8;
+    }
+    .col-lg-pull-7 {
+      @include bootstrap-pull-set-7;
+    }
+    .col-lg-pull-6 {
+      @include bootstrap-pull-set-6;
+    }
+    .col-lg-pull-5 {
+      @include bootstrap-pull-set-5;
+    }
+    .col-lg-pull-4 {
+      @include bootstrap-pull-set-4;
+    }
+    .col-lg-pull-3 {
+      @include bootstrap-pull-set-3;
+    }
+    .col-lg-pull-2 {
+      @include bootstrap-pull-set-2;
+    }
+    .col-lg-pull-1 {
+      @include bootstrap-pull-set-1;
+    }
+    .col-lg-pull-0 {
+      @include bootstrap-pull-set-0;
+    }
+    .col-lg-pull-20percent-1 {
+      @include bootstrap-pull-set-20percent-1;
+    }
+    .col-lg-pull-20percent-2 {
+      @include bootstrap-pull-set-20percent-2;
+    }
+    .col-lg-pull-20percent-3 {
+      @include bootstrap-pull-set-20percent-3;
+    }
+    .col-lg-pull-20percent-4 {
+      @include bootstrap-pull-set-20percent-4;
+    }
+
+    .col-lg-push-12 {
+      @include bootstrap-push-set-12;
+    }
+    .col-lg-push-11 {
+      @include bootstrap-push-set-11;
+    }
+    .col-lg-push-10 {
+      @include bootstrap-push-set-10;
+    }
+    .col-lg-push-9 {
+      @include bootstrap-push-set-9;
+    }
+    .col-lg-push-8 {
+      @include bootstrap-push-set-8;
+    }
+    .col-lg-push-7 {
+      @include bootstrap-push-set-7;
+    }
+    .col-lg-push-6 {
+      @include bootstrap-push-set-6;
+    }
+    .col-lg-push-5 {
+      @include bootstrap-push-set-5;
+    }
+    .col-lg-push-4 {
+      @include bootstrap-push-set-4;
+    }
+    .col-lg-push-3 {
+      @include bootstrap-push-set-3;
+    }
+    .col-lg-push-2 {
+      @include bootstrap-push-set-2;
+    }
+    .col-lg-push-1 {
+      @include bootstrap-push-set-1;
+    }
+    .col-lg-push-0 {
+      @include bootstrap-push-set-0;
+    }
+    .col-lg-push-20percent-1 {
+      @include bootstrap-push-set-20percent-1;
+    }
+    .col-lg-push-20percent-2 {
+      @include bootstrap-push-set-20percent-2;
+    }
+    .col-lg-push-20percent-3 {
+      @include bootstrap-push-set-20percent-3;
+    }
+    .col-lg-push-20percent-4 {
+      @include bootstrap-push-set-20percent-4;
+    }
+
+    .col-lg-offset-12 {
+      @include bootstrap-offset-set-12;
+    }
+    .col-lg-offset-11 {
+      @include bootstrap-offset-set-11;
+    }
+    .col-lg-offset-10 {
+      @include bootstrap-offset-set-10;
+    }
+    .col-lg-offset-9 {
+      @include bootstrap-offset-set-9;
+    }
+    .col-lg-offset-8 {
+      @include bootstrap-offset-set-8;
+    }
+    .col-lg-offset-7 {
+      @include bootstrap-offset-set-7;
+    }
+    .col-lg-offset-6 {
+      @include bootstrap-offset-set-6;
+    }
+    .col-lg-offset-5 {
+      @include bootstrap-offset-set-5;
+    }
+    .col-lg-offset-4 {
+      @include bootstrap-offset-set-4;
+    }
+    .col-lg-offset-3 {
+      @include bootstrap-offset-set-3;
+    }
+    .col-lg-offset-2 {
+      @include bootstrap-offset-set-2;
+    }
+    .col-lg-offset-1 {
+      @include bootstrap-offset-set-1;
+    }
+    .col-lg-offset-0 {
+      @include bootstrap-offset-set-0;
+    }
+    .col-lg-offset-20percent-1 {
+      @include bootstrap-offset-set-20percent-1;
+    }
+    .col-lg-offset-20percent-2 {
+      @include bootstrap-offset-set-20percent-2;
+    }
+    .col-lg-offset-20percent-3 {
+      @include bootstrap-offset-set-20percent-3;
+    }
+    .col-lg-offset-20percent-4 {
+      @include bootstrap-offset-set-20percent-4;
+    }
+
+    .padding-0-lg {
+      padding: 0 !important;
+    }
+    .padding-left-0-lg {
+      padding-left: 0px !important;
+      padding-right: map-get($grid, _padding);
+    }
+    .padding-right-0-lg {
+      padding-left: map-get($grid, _padding);
+      padding-right: 0px !important;
+    }
+    .margin-0-lg {
+      margin: 0;
+    }
+    .absolute-center-lg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .text-left-lg {
+      text-align: left;
+    }
+    .text-center-lg {
+      text-align: center;
+    }
+    .text-right-lg {
+      text-align: right;
+    }
+    .text-justify-lg {
+      text-align: justify;
+      text-justify: distribute-all-lines;
+      text-align-last: justify;
+      &::after {
+        content: ".";
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
+      }
+    }
+    .float-left-lg {
+      float: left;
+    }
+    .float-right-lg {
+      float: right;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .hidden-xs {
+      display: none !important;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .hidden-sm {
+      display: none !important;
+    }
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .hidden-md {
+      display: none !important;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .hidden-lg {
+      display: none !important;
+    }
+  }
+
+  header,
+  main,
+  footer {
+    display: block;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Arial", "Microsoft JhengHei";
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+  }
+
+  span {
+    display: inline-block;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  ol,
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+  }
+
+  button {
+    font-family: "Arial", "Microsoft JhengHei";
+    cursor: pointer;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  textarea {
+    font-family: "Arial", "Microsoft JhengHei";
+    font-size: 16px;
+    outline: none;
+  }
+
+  input[type="button"] {
+    font-family: "Arial", "Microsoft JhengHei";
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  select {
+    font-family: "Arial", "Microsoft JhengHei";
+    font-size: 16px;
+    outline: none;
+  }
+
+  select::-ms-expand {
+    display: none;
+  }
+
+  img {
+    display: block;
+  }
+}

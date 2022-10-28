@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+    <meta name="author" content="UDIGIT TECHNOLOGY CO.,LTD." />
+    <!--作者名稱-->
+    <meta name="copyright" content="UDIGIT TECHNOLOGY CO.,LTD." />
+    <!--版權所有人名稱-->
+    <meta name="UDIGIT" content="https://udigit.com.tw/" />
+    <meta name="keywords" content="關鍵字1,關鍵字2,關鍵字3" />
+    <!--關鍵字-->
+    <meta name="description" content="網頁描述" />
+    <!--網頁描述-->
+
+    <meta itemprop="name" content="網站名稱或標題" />
+    <!--網站名稱或標題-->
+    <meta itemprop="image" content="要顯示的縮圖網址" />
+    <!--縮圖網址-->
+    <meta itemprop="description" content="網頁描述" />
+    <!--網頁描述-->
+
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="網站名稱或標題" />
+    <!--網站名稱或標題-->
+    <meta property="og:site_name" content="網站名稱或標題" />
+    <!--網站名稱或標題-->
+    <meta property="og:url" content="網址" />
+    <!--網址-->
+    <meta property="og:image" content="要顯示的縮圖網址" />
+    <!--縮圖網址-->
+    <meta property="og:description" content="網頁描述" />
+    <!--網頁描述-->
+
+    <!-- Android:url：商品的 URL Scheme -->
+    <!-- Android:package：這可以讓使用者在未安裝的時候連結至安裝連結 -->
+    <!-- Android:app_name：使用者未安裝App，叫你去下載某某App的那個文案 -->
+    <meta property="al:android:url" content="#" />
+    <meta property="al:android:package" content="#" />
+    <meta property="al:android:app_name" content="#" />
+
+    <!-- iOS:url：商品的 URL Scheme -->
+    <!-- iOS:app_store：這可以讓使用者在未安裝的時候連結至安裝連結 -->
+    <!-- iOS:app_name：使用者未安裝App，叫你去下載某某App的那個文案 -->
+    <meta property="al:ios:url" content="#" />
+    <meta property="al:ios:app_store_id" content="#" />
+    <meta property="al:ios:app_name" content="#" />
+
+    <!-- 要在使用者未安裝 App 的時候自動 fallback 帶使用者到網頁版嗎？預設是 true，若設為 false，則 Facebook 會問使用者是否要下載該 App，或是直接去網頁 -->
+    <meta property="al:web:should_fallback" content="false" />
+
+    <title>敏捷ERP 中小企業轉型的核心爆發力</title>
+
+    <link href="//amp.azure.net/libs/amp/latest/skins/amp-default/azuremediaplayer.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Content/css/style.min.css" />
+
+    <!--1366以上 PC-->
+    <!--1024~1365 Tablet橫-->
+    <!--768~1023 Tablet直-->
+    <!--767以下 Mobile-->
+
+    <!--Bootstap(lg) 1200以上-->
+    <!--Bootstap(md) 992-1199-->
+    <!--Bootstap(sm) 768-991-->
+    <!--Bootstap(xs) 767以下-->
+
+    <!--iphone+ 736(560)-->
+    <!--iphone 667(555)-->
+    <!--iphone5 568(460)-->
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T3LHKJ9');</script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3LHKJ9" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="wrapper">
+        <header>
+            <div class="banner-group view">
+                <div class="container">
+                    <img class="slogan" src="Content/img/bizapps_d365bc_web_title.png" alt="">
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="sect-general">
+                <div class="video-group view">
+                    <div class="iframe-group" v-show="webData.Url != ''">
+                        <video id="vid1" class="azuremediaplayer amp-default-skin absolute-center-xs" controls
+                            data-setup='{"techOrder": ["azureHtml5JS", "flashSS", "html5FairPlayHLS","silverlightSS", "html5"], "nativeControlsForTouch": false}'>
+                            <source
+                                src="https://scqmediaservice-aaea.streaming.media.azure.net/2f352da3-cf41-42e1-a56b-b596888d5415/ART_COMPLETE.ism/manifest"
+                                type="application/vnd.ms-sstr+xml" />
+                        </video>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="copyright">{{webData.FirmName}} © 2022</p>
+        </footer>
+    </div>
+
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="Scripts/axios.min.js"></script>
+    <script src="//amp.azure.net/libs/amp/latest/azuremediaplayer.min.js"></script>
+    <script src="Scripts/script.js"></script>
+    <script>
+        var vm = new Vue({
+            el: '#wrapper',
+            data: {
+                webData: {
+                    Url: '',
+                    FirmName: '',
+                },
+            },
+            mounted: function () {
+                this.GetData();
+            },
+            methods: {
+                GetData() {
+                    var _search = location.search;
+                    if (_search != '') {
+                        var _token = _search.split('=')[1];
+                        axios.get('https://scq-api.udigit.com.tw/video?token=' + _token)
+                            .then(function (response) {
+                                vm.$data.webData.Url = response.data.Url
+                                vm.$data.webData.FirmName = response.data.FirmName
+                            })
+                            .catch(function (error) {
+                                console.log("error:GetData");
+                            });
+                    };
+                },
+            },
+        });
+    </script>
+
+</body>
+
+</html>

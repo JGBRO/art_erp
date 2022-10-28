@@ -1,0 +1,440 @@
+@import "_global.scss";
+
+@mixin g_container {
+  width: 100%;
+  max-width: 1240px;
+  margin: auto;
+  padding: 0 20px;
+
+  @media screen and (max-width: 767px) {
+    padding: 0 16px;
+  }
+}
+
+@mixin g_webset {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  background-color: #053557;
+
+  #wrapper {
+    position: relative;
+    min-height: 100vh;
+
+    header {
+      @include g_webset;
+
+      * {
+        @include g_webset;
+      }
+
+      .banner-group {
+        height: 480px;
+        background-image: url("../img/bizapps_d365bc_web_kv.png");
+        background-size: auto 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #000000;
+
+        @media screen and (max-width: 1023px) {
+          height: 800px;
+          background-image: url("../img/bizapps_d365bc_web_kv_pad.png");
+        }
+
+        @media screen and (max-width: 767px) {
+          height: 480px;
+          background-image: url("../img/bizapps_d365bc_web_kv_mobile.png");
+        }
+
+        > .container {
+          height: 100%;
+          @include g_container;
+
+          .slogan {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+
+            @media screen and (max-width: 1023px) {
+              top: 64px;
+              bottom: auto;
+              right: 0;
+            }
+
+            @media screen and (max-width: 767px) {
+              max-width: 320px;
+              top: 32px;
+            }
+          }
+        }
+
+        &.view {
+          height: 280px;
+          background-image: url("../img/bizapps_d365bc_web_video.png");
+
+          @media screen and (max-width: 1023px) {
+            height: 360px;
+            background-image: url("../img/bizapps_d365bc_web_video_pad.png");
+          }
+
+          @media screen and (max-width: 767px) {
+            height: 160px;
+            background-image: url("../img/bizapps_d365bc_web_video_mobile.png");
+          }
+
+          .slogan {
+            max-width: 420px;
+
+            @media screen and (max-width: 1023px) {
+              top: 0;
+              bottom: 0;
+              right: auto;
+              left: 20px;
+            }
+
+            @media screen and (max-width: 767px) {
+              max-width: 210px;
+            }
+          }
+        }
+      }
+    }
+
+    main {
+      @include g_webset;
+      padding: 64px 0 120px;
+
+      @media screen and (max-width: 767px) {
+        padding: 32px 0 40px;
+      }
+
+      .sect-general {
+        @include g_webset;
+        @include g_container;
+
+        > .flex-row {
+          @include g_webset;
+          margin: 0 -10px;
+        }
+
+        [class*="col-"] {
+          @include g_webset;
+        }
+
+        .video-group {
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 64px;
+
+          @media screen and (max-width: 767px) {
+            margin-bottom: 32px;
+          }
+
+          .topic {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+            font-size: 56px;
+            line-height: 84px;
+            color: #ffffff;
+
+            @media screen and (max-width: 767px) {
+              font-size: 32px;
+              line-height: 48px;
+            }
+
+            &::after {
+              content: "";
+              display: block;
+              width: 1px;
+              height: 80px;
+              background-color: #ffffff;
+              margin: 16px 0 24px;
+
+              @media screen and (max-width: 767px) {
+                height: 40px;
+              }
+            }
+          }
+
+          .iframe-group {
+            position: relative;
+            width: 100%;
+            max-width: 1036px;
+            border: 4px solid #76fff5;
+            padding-bottom: 48.5%;
+            margin-bottom: 64px;
+
+            @media screen and (max-width: 767px) {
+              border: 0;
+              margin-bottom: 32px;
+            }
+
+            iframe,
+            .azuremediaplayer {
+              width: 98%;
+              height: 97%;
+            }
+          }
+
+          &::after {
+            content: "";
+            display: block;
+            width: 588px;
+            height: 240px;
+            background-image: url("../img/bizapps_d365bc_web_illustration1.png");
+            background-size: 100% 100%;
+            background-position: center;
+
+            @media screen and (max-width: 767px) {
+              width: 280px;
+              height: 114px;
+            }
+          }
+
+          &.view {
+            margin-bottom: 0;
+
+            @media screen and (max-width: 767px) {
+              margin-bottom: 24px;
+            }
+          }
+        }
+
+        .course-group {
+          @include g_webset;
+          top: 43px;
+
+          @media screen and (max-width: 1023px) {
+            width: 100%;
+            max-width: 540px;
+            top: auto;
+            margin: 0 auto 40px;
+          }
+
+          * {
+            @include g_webset;
+          }
+
+          .topic {
+            font-size: 32px;
+            font-weight: bold;
+            line-height: 48px;
+            color: #ffffff;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: 767px) {
+              font-size: 24px;
+              line-height: 36px;
+            }
+          }
+
+          .member {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            font-size: 16px;
+            line-height: 28px;
+            color: #ffffff;
+            margin-bottom: 15px;
+
+            &::before {
+              content: "";
+              display: block;
+              width: 24px;
+              height: 24px;
+              background-image: url("../img/people.png");
+              background-size: 100% 100%;
+              background-position: center;
+              margin-right: 10px;
+            }
+          }
+
+          .detail-group {
+            p {
+              font-size: 16px;
+              line-height: 28px;
+              color: #ffffff;
+              text-align: justify;
+              margin-bottom: 15px;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+
+            ul {
+              margin-left: 20px;
+              margin-bottom: 20px;
+              li {
+                color: #ffffff;
+                list-style-type: disc;
+              }
+            }
+          }
+        }
+
+        .form-group {
+          @include g_webset;
+          border: 3px solid #76fff5;
+          border-radius: 16px;
+          padding: 40px;
+
+          @media screen and (max-width: 1023px) {
+            width: 100%;
+            max-width: 540px;
+            margin: auto;
+          }
+
+          @media screen and (max-width: 767px) {
+            padding: 40px 16px;
+          }
+
+          * {
+            @include g_webset;
+          }
+
+          .flex-row {
+            margin: 0 -10px;
+          }
+
+          .topic {
+            font-size: 32px;
+            font-weight: bold;
+            line-height: 48px;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 40px;
+
+            @media screen and (max-width: 767px) {
+              font-size: 24px;
+              line-height: 36px;
+            }
+          }
+
+          .tip {
+            font-size: 16px;
+            line-height: 28px;
+            color: #ffffff;
+            margin-bottom: 16px;
+          }
+
+          .row {
+            margin-bottom: 16px;
+
+            .title {
+              font-size: 16px;
+              line-height: 28px;
+              color: #ffffff;
+            }
+
+            input[type="text"],
+            select {
+              width: 100%;
+              font-size: 16px;
+              border: 2px solid #ffffff;
+              border-radius: 100px;
+              background-color: #ffffff;
+              padding: 11px 20px;
+
+              &.input-validation-error {
+                border: 2px solid #ff6161;
+              }
+            }
+
+            select {
+              -webkit-appearance: none;
+              background-image: url("../img/arrow.png");
+              background-size: 25px auto;
+              background-repeat: no-repeat;
+              background-position: top 7px right 9px;
+            }
+
+            span {
+              display: none;
+              font-size: 14px;
+              line-height: 21px;
+              color: #ff6161;
+              margin-top: 4px;
+
+              &.field-validation-error {
+                display: block;
+              }
+            }
+          }
+
+          .btn-group {
+            padding-top: 40px;
+
+            .btn {
+              display: flex;
+              flex-wrap: nowrap;
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+              font-size: 24px;
+              font-weight: bold;
+              line-height: 42px;
+              color: #000000;
+              background: #76fff5;
+              border: 0;
+              border-radius: 100px;
+
+              span {
+                left: 17px;
+                transition: all 0.2s linear;
+              }
+
+              img {
+                width: 20px;
+                margin-left: 10px;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.2s linear;
+              }
+
+              &.loading {
+                span {
+                  left: 0;
+                }
+
+                img {
+                  opacity: 1;
+                  visibility: visible;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    footer {
+      @include g_webset;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: #000000;
+
+      * {
+        @include g_webset;
+      }
+
+      .copyright {
+        color: #ffffff;
+        text-align: center;
+        padding: 24px 0;
+      }
+    }
+  }
+}
